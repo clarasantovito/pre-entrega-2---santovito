@@ -1,12 +1,174 @@
+* {
+    background-color: #202020;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body {
+    background-color: #202020;
+}
+
+/* header */
+nav img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+nav a, nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+
+}
+nav a:hover {
+    color: #ec1d24;
+}
+
+.header__img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+.info__container {
+    margin: 0 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.info__container img {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+}
+
+.info__container-div {
+    width: 30%;
+    height: fit-content;
+}
+/* header */
+
+.division-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.division {
+    color: white;
+    opacity: 1;
+    width: 50%;
+}
+
+/* main */
+
+main .division-container {
+    padding: 20px 0;
+}
+
+main .division {
+    width: 30%;
+    opacity: 0.5;
+}
+.main__index h2 {
+    font-weight: bold;
+}
+.main__index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.index__section{
+    text-align: center;
+    width: 910px;
+}
+
+.index__section .carousel {
+    display: inline-block;
+}
+
 main img, .carousel {
     width: 300px;
     height: 168.75px;
     object-fit: cover;
-    transition-duration: 1s;
+    border-radius: 7%;
+}
+
+.ver-mas {
+    display: flex;
+    justify-content: flex-end;
+}
+.ver-mas a {
+    padding-right: 7px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ec1d24;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.ver-mas a:hover {
+    text-decoration: underline 0.7px;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.645);
 }
 
 .ver-mas img {
-    width: 25px;
-    height: 25px;
+    /* background-color: #ec1d24;
+    border-radius: 100%; */
+    width: 20px;
+    height: 20px;
     object-fit: cover;
+}
+
+.index__section-article p {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+/* main */
+
+
+/* footer */
+footer {
+    background-color: white;
+    margin-top: 50px;
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+} 
+
+footer a, footer p {
+    text-decoration: none;
+    color: black;
+    /* text-align: center; */
+    margin: 0;
+}
+
+footer img {
+    width: 100px;
+    padding: 15px 0;
 }
