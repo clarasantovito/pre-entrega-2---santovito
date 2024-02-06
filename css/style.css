@@ -40,6 +40,7 @@ a.nav-link.active:hover {
 }
 
 body .navbar .container-fluid {
+    background-color: #202020;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(1, auto);
@@ -368,7 +369,7 @@ footer img {
     header .navbar-nav .nav-link.active,
     .navbar-nav .nav-link.show {
         color: rgb(1, 1, 1);
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .nav__img img {
@@ -385,7 +386,7 @@ footer img {
     }
 
     .pages__header-section p {
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 15px;
         width: 90%;
     }
@@ -396,7 +397,7 @@ footer img {
     }
 
     .pages__main-section h2 {
-        font-size: 18px;
+        font-size: 26px;
         text-align: center;
     }
 
@@ -417,18 +418,6 @@ footer img {
         padding: 10px 0;
     }
     
-    /* footer ul {
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
-        footer ul {
-            flex-direction: column;
-            gap: 0;
-        }
-    } */
-
     footer ul {
         display: grid;
         grid-template-columns: 115px 115px;
@@ -469,7 +458,7 @@ footer img {
     
     footer a,
     footer p {
-        font-size: 12px;
+        font-size: 15px;
     }
     
     footer img {
