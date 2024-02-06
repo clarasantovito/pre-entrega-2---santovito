@@ -12,27 +12,42 @@
 
 <body class="body">
     <header>
-        <nav>
-            <a href="../index.html" class="nav__img">
-                <img src="../assets/images/marvel-logo-4.png">
-            </a>
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="../index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="infinity.html" class="nav__link">MCU Infinity Saga</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="multiverse.html" class="nav__link">MCU Multiverse Saga</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="mutant.html" class="nav__link">Mutant Legacy</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="mas.html" class="nav__link aca">MÁS +</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm">
+            <section class="container-fluid">
+                <a href="../index.html" class="nav__img">
+                    <img src="../assets/images/marvel-logo-4.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <article class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="infinity.html">MCU Infinity Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="multiverse.html">MCU Multiverse Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="mutant.html">Mutant Legacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active aca" href="mas.html">MÁS +</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
         </nav>
 
         <section class="pages__header-section">
@@ -52,11 +67,11 @@
         <section class="mas__main-section">
             <h2>Spider-Verse</h2>
             <article class="mas__main-section-content">
-                <img src="../assets/images/sp1.jpg" class="sp1">
-                <img src="../assets/images/sp2.jpg" class="sp2">
-                <img src="../assets/images/sp3.jpg" class="sp3">
-                <img src="../assets/images/spa1.jpg" class="spa1">
-                <img src="../assets/images/spa2.jpg" class="spa2">
+                <img src="../assets/images/sp1.jpg" class="sp1" alt="spiderman 1">
+                <img src="../assets/images/sp2.jpg" class="sp2" alt="spiderman 2">
+                <img src="../assets/images/sp3.jpg" class="sp3" alt="spiderman 3">
+                <img src="../assets/images/spa1.jpg" class="spa1" alt="amazing spiderman 1">
+                <img src="../assets/images/spa2.jpg" class="spa2" alt="amazing spiderman 2">
             </article>
         </section>
 
@@ -67,14 +82,14 @@
         <section class="mas__main-section">
             <h2>Cortos</h2>
             <article class="mas__main-section-content">
-                <img src="../assets/images/os1.jpeg" class="os1">
-                <img src="../assets/images/os2.jpeg" class="os2">
-                <img src="../assets/images/os3.jpeg" class="os3">
-                <img src="../assets/images/os4.jpeg" class="os4">
-                <img src="../assets/images/os5.jpeg" class="os5">
-                <img src="../assets/images/os6.jpeg" class="os6">
-                <img src="../assets/images/os7.jpeg" class="os7">
-                <img src="../assets/images/os8.jpeg" class="os8">
+                <img src="../assets/images/os1.jpeg" class="os1" alt="the consultant">
+                <img src="../assets/images/os2.jpeg" class="os2" alt="martillo de thor">
+                <img src="../assets/images/os3.jpeg" class="os3" alt="item 47">
+                <img src="../assets/images/os4.jpeg" class="os4" alt="agente carter">
+                <img src="../assets/images/os5.jpeg" class="os5" alt="all hail the king">
+                <img src="../assets/images/os6.jpeg" class="os6" alt="team thor parte 1">
+                <img src="../assets/images/os7.jpeg" class="os7" alt="team thor parte 2">
+                <img src="../assets/images/os8.jpeg" class="os8" alt="team darryl">
             </article>
         </section>
 
@@ -85,36 +100,35 @@
         <section class="mas__main-section">
             <h2>The Defenders</h2>
             <article class="mas__main-section-content">
-                <img src="../assets/images/dd.jpeg" class="daredevil">
-                <img src="../assets/images/jj.jpeg" class="jessicajones">
-                <img src="../assets/images/lc.jpeg" class="lukecage">
-                <img src="../assets/images/if.jpeg" class="ironfist">
-                <img src="../assets/images/td.jpeg" class="thedefenders">
-                <img src="../assets/images/p.jpeg" class="punisher">
+                <img src="../assets/images/dd.jpeg" alt="daredevil">
+                <img src="../assets/images/jj.jpeg" alt="jessica jones">
+                <img src="../assets/images/lc.jpeg" alt="luke cage">
+                <img src="../assets/images/if.jpeg" alt="iron fist">
+                <img src="../assets/images/td.jpeg" alt="the defenders">
+                <img src="../assets/images/p.jpeg" alt="punisher">
             </article>
         </section>
     </main>
 
     <footer>
         <ul class="footer__list">
-            <li class="footer__list-item">
-                <a href="../index.html" class="footer__link">Inicio</a>
+            <li class="footer__list-item-inicio">
+                <a href="../index.html">Inicio</a>
             </li>
-            <li class="footer__list-item">
-                <a href="infinity.html" class="footer__link">MCU Infinity Saga</a>
+            <li class="footer__list-item-infinity">
+                <a href="infinity.html">MCU Infinity Saga</a>
             </li>
-            <li class="footer__list-item">
-                <a href="multiverse.html" class="footer__link">MCU Multiverse Saga</a>
+            <li class="footer__list-item-multiverse">
+                <a href="multiverse.html">MCU Multiverse Saga</a>
             </li>
-            <li class="footer__list-it" class="footer__link">
+            <li class="footer__list-item-mutant">
                 <a href="mutant.html">Mutant Legacy</a>
             </li>
-            <li class="footer__list-it" class="footer__link">
+            <li class="footer__list-item-mas">
                 <a href="mas.html">MÁS +</a>
             </li>
         </ul>
         <img src="../assets/images/marvel-logo-4.png">
-
         <p>©All rights reserved, 2024</p>
     </footer>
 

@@ -12,27 +12,42 @@
 
 <body class="body">
     <header>
-        <nav>
-            <a href="../index.html" class="nav__img">
-                <img src="../assets/images/marvel-logo-4.png">
-            </a>
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="../index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="infinity.html" class="nav__link aca">MCU Infinity Saga</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="multiverse.html" class="nav__link">MCU Multiverse Saga</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="mutant.html" class="nav__link">Mutant Legacy</a>
-                </li>
-                <li class="nav__list-it">
-                    <a href="mas.html" class="nav__link">MÁS +</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm">
+            <section class="container-fluid">
+                <a href="../index.html" class="nav__img">
+                    <img src="../assets/images/marvel-logo-4.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <article class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active aca" href="infinity.html">MCU Infinity Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="multiverse.html">MCU Multiverse Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="mutant.html">Mutant Legacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="mas.html">MÁS +</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
         </nav>
 
         <section class="pages__header-section">
@@ -54,7 +69,7 @@
         <section class="pages__main-section">
             <h2>Iron Man</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/ironman1.jpg">
+                <img src="../assets/images/ironman1.jpg" alt="iron man 1">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -69,7 +84,7 @@
         <section class="pages__main-section section-right">
             <h2>Iron Man 2</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/ironman2.jpg">
+                <img src="../assets/images/ironman2.jpg" alt="iron man 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -84,7 +99,7 @@
         <section class="pages__main-section">
             <h2>Thor</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/thor.jpg">
+                <img src="../assets/images/thor.jpg" alt="thor">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -99,7 +114,7 @@
         <section class="pages__main-section section-right">
             <h2>Capitán América: El primer Vengador</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/capitanamerica.jpg">
+                <img src="../assets/images/capitanamerica.jpg" alt="capitan america">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -114,7 +129,7 @@
         <section class="pages__main-section">
             <h2>Los Vengadores</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/vengadores.jpg">
+                <img src="../assets/images/vengadores.jpg" alt="los vengadores">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -129,7 +144,7 @@
         <section class="pages__main-section section-right">
             <h2>Iron Man 3</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/ironman3.jpg">
+                <img src="../assets/images/ironman3.jpg" alt="iron man 3">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -144,7 +159,7 @@
         <section class="pages__main-section">
             <h2>Thor: El Mundo Oscuro</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/thor2.jpg">
+                <img src="../assets/images/thor2.jpg" alt="thor 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -159,7 +174,7 @@
         <section class="pages__main-section section-right">
             <h2>Capitán América: EL soldado del Invierno</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/capitanamerica2.jpg">
+                <img src="../assets/images/capitanamerica2.jpg" alt="capitan america 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -174,7 +189,7 @@
         <section class="pages__main-section">
             <h2>Guardianes de la Galaxia vol.1</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/guardianesdelagalaxia.jpg">
+                <img src="../assets/images/guardianesdelagalaxia.jpg" alt="guardianes de la galaxia 1">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -189,7 +204,7 @@
         <section class="pages__main-section section-right">
             <h2>Los Vengadores: Era de Ultrón</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/vengadores2.jpg">
+                <img src="../assets/images/vengadores2.jpg" alt="era de ultrón">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -204,7 +219,7 @@
         <section class="pages__main-section">
             <h2>Ant-Man</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/antman.jpg">
+                <img src="../assets/images/antman.jpg" alt="antman">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -219,7 +234,7 @@
         <section class="pages__main-section section-right">
             <h2>Capitán América: Civil War</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/capitanamerica3.jpg">
+                <img src="../assets/images/capitanamerica3.jpg" alt="civil war">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -234,7 +249,7 @@
         <section class="pages__main-section">
             <h2>Doctor Strange</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/doctorstrange.jpg">
+                <img src="../assets/images/doctorstrange.jpg" alt="doctor strange">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -249,7 +264,7 @@
         <section class="pages__main-section section-right">
             <h2>Guardianes de la Galaxia vol.2</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/guardianesdelagalaxia2.jpg">
+                <img src="../assets/images/guardianesdelagalaxia2.jpg" alt="guardianes de la galaxia 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -264,7 +279,7 @@
         <section class="pages__main-section">
             <h2>Spider-Man: Bienvenido a Casa</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/spiderman.jpg">
+                <img src="../assets/images/spiderman.jpg" alt="spiderman">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -279,7 +294,7 @@
         <section class="pages__main-section section-right">
             <h2>Thor: Ragnarök</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/thor2.jpg">
+                <img src="../assets/images/Thor-ragnarok-920x518.jpg" alt="Ragnarök">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -294,7 +309,7 @@
         <section class="pages__main-section">
             <h2>Pantera Negra</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/black-panther.jpg">
+                <img src="../assets/images/black-panther.jpg" alt="black panther">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -309,7 +324,7 @@
         <section class="pages__main-section section-right">
             <h2>Los Vengadores: Infinity War</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/infinitywar.jpg">
+                <img src="../assets/images/infinitywar.jpg" alt="infinity war">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -324,7 +339,7 @@
         <section class="pages__main-section">
             <h2>Ant-Man and The Wasp</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/antman2.jpg">
+                <img src="../assets/images/antman2.jpg" alt="antman and the wasp">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -339,7 +354,7 @@
         <section class="pages__main-section section-right">
             <h2>Capitana Marvel</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/capitanamarvel.jpg">
+                <img src="../assets/images/capitanamarvel.jpg" alt="capitana marvel">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -354,7 +369,7 @@
         <section class="pages__main-section">
             <h2>Los Vengadores: ENDGAME</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/endgame.jpg">
+                <img src="../assets/images/endgame.jpg" alt="endgame">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -369,7 +384,7 @@
         <section class="pages__main-section section-right">
             <h2>Spider-Man: Lejos de Casa</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/spiderman2.jpg">
+                <img src="../assets/images/spiderman2.jpg" alt="spiderman 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -384,19 +399,19 @@
 
     <footer>
         <ul class="footer__list">
-            <li class="footer__list-item">
-                <a href="../index.html" class="footer__link">Inicio</a>
+            <li class="footer__list-item-inicio">
+                <a href="../index.html">Inicio</a>
             </li>
-            <li class="footer__list-item">
-                <a href="infinity.html" class="footer__link">MCU Infinity Saga</a>
+            <li class="footer__list-item-infinity">
+                <a href="infinity.html">MCU Infinity Saga</a>
             </li>
-            <li class="footer__list-item">
-                <a href="multiverse.html" class="footer__link">MCU Multiverse Saga</a>
+            <li class="footer__list-item-multiverse">
+                <a href="multiverse.html">MCU Multiverse Saga</a>
             </li>
-            <li class="footer__list-it" class="footer__link">
+            <li class="footer__list-item-mutant">
                 <a href="mutant.html">Mutant Legacy</a>
             </li>
-            <li class="footer__list-it" class="footer__link">
+            <li class="footer__list-item-mas">
                 <a href="mas.html">MÁS +</a>
             </li>
         </ul>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +12,47 @@
 
 <body class="body">
     <header>
-        <nav>
-            <a href="../index.html" class="nav__img">
-                <img src="../assets/images/marvel-logo-4.png">
-            </a>
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="../index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="infinity.html" class="nav__link">MCU Infinity Saga</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="multiverse.html" class="nav__link">MCU Multiverse Saga</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="mutant.html" class="nav__link aca">Mutant Legacy</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="mas.html" class="nav__link">MÁS +</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm">
+            <section class="container-fluid">
+                <a href="../index.html" class="nav__img">
+                    <img src="../assets/images/marvel-logo-4.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <article class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="infinity.html">MCU Infinity Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="multiverse.html">MCU Multiverse Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active aca" href="mutant.html">Mutant Legacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="mas.html">MÁS +</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
         </nav>
-
+        
         <section class="pages__header-section">
             <article class="pages__header-section-article">
-                <img src="../assets/gif/mutant.gif" class="header__img">
+                <img src="../assets/images/antman.jpg" class="header__img">
                 <h1>Mutant Legacy</h1>
             </article>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita reiciendis officiis laudantium.
@@ -53,7 +69,7 @@
         <section class="pages__main-section">
             <h2>X-MEN</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/1.jpeg">
+                <img src="../assets/images/1.jpeg" alt="x-men">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -68,7 +84,7 @@
         <section class="pages__main-section section-right">
             <h2>Deadpool</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/d1.jpeg">
+                <img src="../assets/images/d1.jpeg" alt="Deadpool 1">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -83,7 +99,7 @@
         <section class="pages__main-section">
             <h2>X-MEN: Primera Clase</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/2.jpeg">
+                <img src="../assets/images/2.jpeg" alt="x-men: Primera generación">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -98,7 +114,7 @@
         <section class="pages__main-section section-right">
             <h2>X-MEN ORIGINS: Wolverine</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/3.jpeg">
+                <img src="../assets/images/3.jpeg" alt="wolverine">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -113,7 +129,7 @@
         <section class="pages__main-section">
             <h2>X-MEN 2</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/4.jpeg">
+                <img src="../assets/images/4.jpeg" alt="x-men 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -128,7 +144,7 @@
         <section class="pages__main-section section-right">
             <h2>X-MEN: La Batalla Final</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/5.jpeg">
+                <img src="../assets/images/5.jpeg" alt="x-men: la battalla final">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -143,7 +159,7 @@
         <section class="pages__main-section">
             <h2>Logan</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/log.jpeg">
+                <img src="../assets/images/log.jpeg" alt="logan">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -158,7 +174,7 @@
         <section class="pages__main-section section-right">
             <h2>X-MEN: Días de Futuro Pasado</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/6.jpeg">
+                <img src="../assets/images/6.jpeg" alt="x-men: dias de futuro pasado">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -173,7 +189,7 @@
         <section class="pages__main-section">
             <h2>X-MEN: Apocalipsis</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/7.jpeg">
+                <img src="../assets/images/7.jpeg" alt="x-men: Apocalipsis">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -188,7 +204,7 @@
         <section class="pages__main-section section-right">
             <h2>Wolverine</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/8.jpeg">
+                <img src="../assets/images/8.jpeg" alt="wolverine">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -203,7 +219,7 @@
         <section class="pages__main-section">
             <h2>Deadpool 2</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/d2.jpeg">
+                <img src="../assets/images/d2.jpeg" alt="deadpool 2">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -218,7 +234,7 @@
         <section class="pages__main-section section-right">
             <h2>X-MEN: Fénix Oscuro</h2>
             <article class="pages__main-section-content">
-                <img src="../assets/images/9.jpeg">
+                <img src="../assets/images/9.jpeg" alt="fenix oscuro">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad odio doloremque doloribus amet ex
                     expedita
                     delectus nemo! Eaque ipsum recusandae, iusto deserunt commodi nisi, facilis iste quos corporis quia
@@ -257,4 +273,5 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
 </body>
+
 </html>
