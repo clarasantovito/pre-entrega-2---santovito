@@ -1,0 +1,10 @@
+.mas__main {
+    text-align: center;
+}
+
+.mas__main-section-content {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px;
+    justify-content: center;
+}

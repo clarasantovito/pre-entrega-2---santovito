@@ -1,0 +1,43 @@
+.pages__main {
+    margin: 20px 50px;
+}
+
+.pages__main h2 {
+    font-size: 25px;
+    color: #FF0A12;
+    font-weight: bold;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.753);
+}
+
+.pages__main-section-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.pages__main-section-content p {
+    width: 65%;
+}
+
+.content-info {
+    display: block;
+    font-weight: 600;
+}
+
+.pages__main-section-content img {
+    width: 320px;
+    height: 188.75px;
+    object-fit: cover;
+}
+
+.section-right h2,
+.section-right p {
+    text-align: end;
+}
+
+.section-right article {
+    flex-direction: row-reverse;
+}
+

@@ -1,0 +1,137 @@
+@media (max-width:768px) {
+    .nav__img {
+        width: 170px;
+    }
+
+    header .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        font-size: 18px;
+    }
+
+    .pages__header-section-article h1 {
+        font-size: 80px;
+    }
+    .header__img {
+        height: 350px;
+    }
+
+    .pages__main img {
+        width: 244px;
+        height: 144px;
+    }
+    .pages__main img {
+        font-size:14px;
+    }
+}
+
+/* @media (max-width:600px) {
+
+} */
+
+@media (max-width:480px) {
+    body header .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    header .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: rgb(1, 1, 1);
+        font-size: 24px;
+    }
+
+    .nav__img img {
+        width: 100px;
+        padding-top: 10px;
+    }
+
+    .header__img {
+        height: 200px;
+    }
+
+    .pages__header-section-article h1 {
+        font-size: 40px;
+    }
+
+    .pages__header-section p {
+        font-size: 18px;
+        padding-top: 15px;
+        width: 90%;
+    }
+
+    .pages__main img {
+        width: 310px;
+        height: 120px;
+    }
+
+    .pages__main-section h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .pages__main-section-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding-bottom: 30px;
+    }
+
+    .pages__main-section-content p {
+        width: 310px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .division-container {
+        padding: 10px 0;
+    }
+    
+    footer ul {
+        display: grid;
+        grid-template-columns: 115px 115px;
+        gap: 0 15px;
+        grid-template-areas: 
+        'inicio inicio'
+        'mcu1  mutant'
+        'mcu2  mas';
+    }
+
+    .footer__list-item-inicio {
+        grid-area: inicio;
+        text-align: center;
+    }
+
+    li.footer__list-item-infinity {
+        grid-area: mcu1;
+        text-align: end;
+    }
+    .footer__list-item-multiverse {
+        grid-area: mcu2;
+        text-align: end;
+    }
+    .footer__list-item-mutant {
+        grid-area: mutant;
+        text-align: start;
+    }
+    .footer__list-item-mas {
+        grid-area: mas;
+        text-align: start;
+    }
+
+    footer {
+        margin-top: 25px;
+        padding: 25px 0 15px 0;
+    }
+    
+    
+    footer a,
+    footer p {
+        font-size: 15px;
+    }
+    
+    footer img {
+        width: 50px;
+        padding: 10px 0;
+    }
+}

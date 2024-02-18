@@ -1,0 +1,121 @@
+.index__header-section {
+    h1 {
+        font-size: 80px;
+        text-align: center;
+        margin: 10px 0 40px 0;
+    }
+}
+
+.index__section-article p {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+
+.info__container {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 130px;
+
+    img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.info__container-div {
+    width: 30%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 30px 100%;
+    grid-template-areas:
+        'a1 a2'
+        ' - a3';
+
+    img {
+        grid-area: a1;
+        margin-top: 5px;
+    }
+
+    h2 {
+        // color: #FF0A12;
+        font-weight: bold;
+        text-decoration: underline 1.5px white;
+        text-shadow: 1px 1px 5px black;
+        grid-area: a2;
+    }
+
+    p {
+        grid-area: a3;
+    }
+}
+
+
+main {
+    .division {
+        width: 30%;
+        opacity: 0.5;
+    }
+    .division-container {
+        padding: 20px 0;
+    }
+    
+    img, .carousel {
+        width: 300px;
+        height: 168.75px;
+        object-fit: cover;
+        border-radius: 7%;
+    }
+}
+
+
+.main__index {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.index__section {
+    text-align: center;
+    width: 910px;
+    
+    .carousel {
+        display: inline-block;
+    }
+}
+
+
+
+.ver-mas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    a {
+        padding-right: 7px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ff0a12;
+        font-size: 20px;
+        transition: 0.5s;
+        &:hover {
+            // text-decoration: underline 0.7px;
+            text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.645);
+            text-decoration: underline 1px;
+        }
+    }
+    
+    img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+}
+

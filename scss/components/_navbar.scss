@@ -1,0 +1,47 @@
+.nav__img img {
+    width: 200px;
+    height: 80px;
+}
+
+.nav__img {
+    grid-area: img;
+    margin-bottom: 20px;
+}
+
+body .navbar {
+    padding: 0;
+}
+
+.navbar-bar {
+    grid-area: list;
+}
+
+header .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 0 10px 10px;
+    transition: 0.3s;
+}
+
+a.nav-link.active:hover {
+    color: #FF0A12;
+}
+
+body .navbar .container-fluid {
+    background-color: #121212;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        'img'
+        'list';
+}
+
+header .navbar-nav .nav-link.active.aca,
+.navbar-nav .nav-link.show.aca {
+    color: #FF0A12;
+}
