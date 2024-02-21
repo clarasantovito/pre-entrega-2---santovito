@@ -1,5 +1,9 @@
 .mas__main {
     text-align: center;
+    .alert {
+        text-decoration: underline #ff0a12;
+        opacity: 0.3;
+    }
 }
 
 .mas__main-section-content {
@@ -7,4 +11,48 @@
     grid-template-columns: repeat(3, 300px);
     gap: 10px;
     justify-content: center;
+}
+
+.mas__main-section-content {
+    div {
+        position: relative;
+
+        img {
+            position: relative;
+            top: 0;
+            z-index: 4;
+            
+            &:active {
+                z-index: 1;
+            }
+        }
+        span {
+            z-index: 2;
+            width: 300px;
+            height: 168.75px;
+            padding: 0 15px;
+            color: rgb(255, 255, 255);
+            background-color: #121212e1;
+            border-radius: 7%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+                text-decoration: underline #ff0a12;
+            }
+
+            p {
+                font-size: 16px;
+                color: #fffefe;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
 }

@@ -44,8 +44,12 @@ header h2 {
         top: 0;
         font-size: 100px;
         font-weight: bold;
-        text-shadow: 10px 10px 17px rgba(0, 0, 0, 0.773);
+        text-shadow: 10px 10px 17px rgb(0, 0, 0);
     }
+}
+
+.mas__title {
+    color: #FF0A12;
 }
 
 .text__italic-red {

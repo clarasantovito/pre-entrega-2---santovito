@@ -5,6 +5,20 @@
     justify-content: center;
     gap: 15px;
 
+    .span-series {
+        position: absolute;
+        top: 915px;
+        left: 160px;
+        font-style: italic;
+        color: rgba(157, 157, 157, 0.799);
+    }
+    .span-adelantos {
+        position: absolute;
+        font-style: italic;
+        color: rgba(157, 157, 157, 0.799);
+        top: 4670px;
+        right: 170px;
+    }
     .series-text {
         width: 265px;
 
@@ -30,7 +44,7 @@
             position: relative;
             z-index: 4;
             
-            &:hover {
+            &:active {
                 z-index: 1;
                 box-shadow: 1px 1px 30px rgb(0, 0, 0);
             }
