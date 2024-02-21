@@ -1,0 +1,46 @@
+.mutant__main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 70px;
+    row-gap: 80px;
+    justify-content: center;
+}
+
+.mutant__main-section {
+    width: 270px + 20px + 20px;
+    background-color: #131313;
+    padding: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        width: 270px;
+        height: 153px;
+        border-radius: 3%;
+    }
+
+    p {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-weight: normal;
+
+        }
+    }
+
+    .movie-name {
+        align-self: center;
+        font-weight: bold;
+        text-decoration: underline #ff0a12;
+        font-size: 16px;
+        padding-bottom: 3px;
+    }
+}
+

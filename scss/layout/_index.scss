@@ -2,7 +2,7 @@
     h1 {
         font-size: 80px;
         text-align: center;
-        margin: 10px 0 40px 0;
+        margin: 10px 15px 40px;
     }
 }
 
@@ -13,11 +13,10 @@
 }
 
 .info__container {
-    margin: 0 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 130px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     img {
         width: 15px;
@@ -26,8 +25,7 @@
 }
 
 .info__container-div {
-    width: 30%;
-    height: fit-content;
+    width: fit-content;
     display: grid;
     grid-template-columns: 30px 100%;
     grid-template-areas:
@@ -45,10 +43,12 @@
         text-decoration: underline 1.5px white;
         text-shadow: 1px 1px 5px black;
         grid-area: a2;
+        width: fit-content;
     }
 
     p {
         grid-area: a3;
+        width: 300px;
     }
 }
 
@@ -58,11 +58,13 @@ main {
         width: 30%;
         opacity: 0.5;
     }
+
     .division-container {
         padding: 20px 0;
     }
-    
-    img, .carousel {
+
+    img,
+    .carousel {
         width: 300px;
         height: 168.75px;
         object-fit: cover;
@@ -72,11 +74,6 @@ main {
 
 
 .main__index {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    
     h2 {
         font-weight: bold;
     }
@@ -84,37 +81,66 @@ main {
 
 .index__section {
     text-align: center;
-    width: 910px;
-    
+    column-gap: 5px;
+    row-gap: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        'a1 a1 a1'
+        'a2 a3 a4'
+        '- - a5';
+
     .carousel {
         display: inline-block;
     }
-}
 
 
+    &-article {
+        grid-area: a1;
 
-.ver-mas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-    a {
-        padding-right: 7px;
-        font-weight: bold;
-        text-decoration: none;
-        color: #ff0a12;
-        font-size: 20px;
-        transition: 0.5s;
-        &:hover {
-            text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.645);
-            text-decoration: underline 1px;
+        p {
+            margin: 0;
+            padding: 0;
         }
     }
-    
-    img {
-        width: 20px;
-        height: 20px;
-        object-fit: cover;
+
+    .a2 {
+        grid-area: a2;
+    }
+
+    .a3 {
+        grid-area: a3;
+    }
+
+    .a4 {
+        grid-area: a4;
+    }
+
+    .ver-mas {
+        grid-area: a5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #ff0a12;
+            font-size: 20px;
+            transition: 0.5s;
+
+            &:hover {
+                text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.645);
+                text-decoration: underline 1px;
+            }
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
     }
 }
-
