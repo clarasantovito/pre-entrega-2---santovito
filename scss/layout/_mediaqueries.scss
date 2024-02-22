@@ -118,6 +118,10 @@
                 font-size: 16px;
             }
 
+            .pages__header-section h1 {
+                height: 200px;
+            }
+
             .pages__header-section-article h1, .index__header-section h1{
                 font-size: 50px;
             }
@@ -163,9 +167,7 @@
             padding: 25px 0 15px 0;
 
             ul {
-                display: grid;
-                grid-template-columns: 115px 115px;
-                gap: 0 15px;
+                @include grid(2, 115px, 15px, 0, none);
                 grid-template-areas:
                     'inicio inicio'
                     'mcu1  mutant'

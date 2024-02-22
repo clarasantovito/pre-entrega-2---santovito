@@ -4,12 +4,9 @@ body {
         padding: 0;
         
         .container-fluid {
-            background-color: #121212;
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(1, auto);
+            background-color: $background-color;
+            @include grid(1, auto, 10px, 10px, center);
             grid-template-rows: repeat(2, auto);
-            justify-content: center;
             justify-items: center;
             grid-template-areas:
                 'img'
@@ -41,11 +38,11 @@ header .navbar-nav .nav-link.active,
 }
 
 a.nav-link.active:hover {
-    color: #FF0A12;
+    color: $marvel-color;
 }
 
 
 header .navbar-nav .nav-link.active.aca,
 .navbar-nav .nav-link.show.aca {
-    color: #FF0A12;
+    color: $marvel-color;
 }

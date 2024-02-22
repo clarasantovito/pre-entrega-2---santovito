@@ -5,10 +5,7 @@ footer {
     text-align: center;
     ul {
         padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
+        @include flex(row, 25px, wrap, center);
     }
     
     a, p {

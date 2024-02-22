@@ -13,10 +13,7 @@
 }
 
 .info__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    @include flex(row, 0, wrap, space-around);
 
     img {
         width: 15px;
@@ -38,7 +35,7 @@
     }
 
     h2 {
-        // color: #FF0A12;
+        // color: $marvel-color;
         font-weight: bold;
         text-decoration: underline 1.5px white;
         text-shadow: 1px 1px 5px black;
@@ -81,11 +78,7 @@ main {
 
 .index__section {
     text-align: center;
-    column-gap: 5px;
-    row-gap: 10px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 300px);
+    @include grid(3, 300px, 5px, 10px, center);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
         'a1 a1 a1'
@@ -127,7 +120,7 @@ main {
         a {
             font-weight: bold;
             text-decoration: none;
-            color: #ff0a12;
+            color: $marvel-color;
             font-size: 20px;
             transition: 0.5s;
 

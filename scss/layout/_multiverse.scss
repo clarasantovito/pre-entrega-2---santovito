@@ -1,9 +1,6 @@
 .series-container {
     margin: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    @include flex(row, 15px, wrap, center);
 
     .span-series {
         position: absolute;
@@ -31,10 +28,8 @@
 
     .series-poster {
         width: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 260px);
+        @include grid(3, 260px, 10px, 10px, none);
         grid-template-rows: repeat(3, 155px);
-        gap: 10px;
         
         img {
             width: 256px;
@@ -51,17 +46,17 @@
         }
         
         p {
-            font-size: 80px;
-            font-weight: bold;
+            z-index: 2;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
             display: flex;
             width: 256px;
             height: 152px;
+            font-size: 80px;
+            font-weight: bold;
             background-color: #ffffff61;
-            position: absolute;
-            z-index: 2;
             color: #121212cd;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
 
             span {

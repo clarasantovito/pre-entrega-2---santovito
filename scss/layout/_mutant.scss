@@ -1,9 +1,5 @@
 .mutant__main {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 70px;
-    row-gap: 80px;
-    justify-content: center;
+    @include grid(3, auto, 70px, 80px, center);
 }
 
 .mutant__main-section {
@@ -38,7 +34,7 @@
     .movie-name {
         align-self: center;
         font-weight: bold;
-        text-decoration: underline #ff0a12;
+        text-decoration: underline $marvel-color;
         font-size: 16px;
         padding-bottom: 3px;
     }

@@ -11,10 +11,11 @@ body .navbar {
 body .navbar .container-fluid {
   background-color: #121212;
   display: grid;
-  gap: 10px;
   grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(2, auto);
+  column-gap: 10px;
+  row-gap: 10px;
   justify-content: center;
+  grid-template-rows: repeat(2, auto);
   justify-items: center;
   grid-template-areas: "img" "list";
 }
@@ -41,12 +42,12 @@ header .navbar-nav .nav-link.active,
 }
 
 a.nav-link.active:hover {
-  color: #FF0A12;
+  color: #ff0a12;
 }
 
 header .navbar-nav .nav-link.active.aca,
 .navbar-nav .nav-link.show.aca {
-  color: #FF0A12;
+  color: #ff0a12;
 }
 
 .header__img {
@@ -63,7 +64,9 @@ header h2 {
 .pages__header-section {
   display: grid;
   grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(3, auto);
+  column-gap: 0;
+  row-gap: 0;
+  justify-content: center;
   justify-items: center;
 }
 .pages__header-section p {
@@ -112,6 +115,8 @@ header h2 {
 .division-container {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  gap: 0;
   flex-wrap: wrap;
   justify-content: center;
   padding: 70px 0;
@@ -132,9 +137,10 @@ footer {
 footer ul {
   padding: 0;
   display: flex;
+  flex-direction: row;
+  gap: 25px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
 }
 footer a, footer p {
   text-decoration: none;
@@ -162,8 +168,9 @@ footer img {
 .info__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 0;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .info__container img {
   width: 15px;
@@ -213,11 +220,11 @@ main .carousel {
 
 .index__section {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
   column-gap: 5px;
   row-gap: 10px;
-  display: grid;
   justify-content: center;
-  grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "a1 a1 a1" "a2 a3 a4" "- - a5";
 }
@@ -280,7 +287,7 @@ main .carousel {
 
 .pages__main h3 {
   font-size: 25px;
-  color: #FF0A12;
+  color: #ff0a12;
   font-weight: bold;
   text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.753);
 }
@@ -319,9 +326,10 @@ main .carousel {
 .series-container {
   margin: 50px 0;
   display: flex;
+  flex-direction: row;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
 }
 .series-container .span-series {
   position: absolute;
@@ -348,8 +356,10 @@ main .carousel {
   width: auto;
   display: grid;
   grid-template-columns: repeat(3, 260px);
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: none;
   grid-template-rows: repeat(3, 155px);
-  gap: 10px;
 }
 .series-container .series-poster img {
   width: 256px;
@@ -364,17 +374,17 @@ main .carousel {
   box-shadow: 1px 1px 30px rgb(0, 0, 0);
 }
 .series-container .series-poster p {
-  font-size: 80px;
-  font-weight: bold;
+  z-index: 2;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
   display: flex;
   width: 256px;
   height: 152px;
+  font-size: 80px;
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 0.3803921569);
-  position: absolute;
-  z-index: 2;
   color: rgba(18, 18, 18, 0.8039215686);
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .series-container .series-poster p span {
@@ -441,7 +451,8 @@ main .division-container-multiverse {
 .mas__main-section-content {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
   justify-content: center;
 }
 
@@ -458,17 +469,17 @@ main .division-container-multiverse {
 }
 .mas__main-section-content div span {
   z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
   width: 300px;
   height: 168.75px;
   padding: 0 15px;
   color: rgb(255, 255, 255);
   background-color: rgba(18, 18, 18, 0.8823529412);
   border-radius: 7%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .mas__main-section-content div span h3 {
   font-size: 18px;
@@ -562,6 +573,9 @@ main .division-container-multiverse {
   body header .pages__header-section p {
     font-size: 16px;
   }
+  body header .pages__header-section h1 {
+    height: 200px;
+  }
   body header .pages__header-section-article h1, body header .index__header-section h1 {
     font-size: 50px;
   }
@@ -598,8 +612,10 @@ main .division-container-multiverse {
   }
   .pages__main-section h3 footer ul {
     display: grid;
-    grid-template-columns: 115px 115px;
-    gap: 0 15px;
+    grid-template-columns: repeat(2, 115px);
+    column-gap: 15px;
+    row-gap: 0;
+    justify-content: none;
     grid-template-areas: "inicio inicio" "mcu1  mutant" "mcu2  mas";
   }
   .pages__main-section h3 footer a,
