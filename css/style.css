@@ -502,15 +502,19 @@ main .division-container-multiverse {
   .nav__img {
     width: 170px;
   }
+  header .navbar .container-fluid {
+    height: 29vh;
+  }
   header .navbar-nav .nav-link.active,
-  .navbar-nav .nav-link.show {
+  header .navbar-nav .nav-link.show {
     font-size: 18px;
   }
   .pages__header-section-article h1 {
+    height: 71vh;
     font-size: 80px;
   }
   .header__img {
-    height: 350px;
+    height: 71vh;
   }
   .mutant__main {
     grid-template-columns: repeat(2, auto);
@@ -550,7 +554,17 @@ main .division-container-multiverse {
   body header .navbar .container-fluid {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: white;
+    height: 70px;
+  }
+  body header .navbar .container-fluid a {
+    padding: 0;
+    margin: 0;
+  }
+  body header .navbar .container-fluid a img {
+    padding: 0;
+    margin: 0;
   }
   body header .navbar-nav .nav-link.active,
   body header .navbar-nav .nav-link.show {
@@ -563,7 +577,8 @@ main .division-container-multiverse {
   body header .pages__header-section h1 {
     height: 200px;
   }
-  body header .pages__header-section-article h1, body header .index__header-section h1 {
+  body header .pages__header-section-article h1,
+  body header .index__header-section h1 {
     font-size: 50px;
   }
   .nav__img img {
