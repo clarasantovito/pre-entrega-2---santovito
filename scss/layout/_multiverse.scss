@@ -2,13 +2,6 @@
     margin: 50px 0;
     @include flex(row, 15px, wrap, center);
 
-    .span-adelantos {
-        position: absolute;
-        font-style: italic;
-        color: rgba(157, 157, 157, 0.799);
-        top: 4670px;
-        right: 170px;
-    }
     .series-text {
         width: 265px;
 

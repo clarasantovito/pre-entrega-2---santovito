@@ -211,6 +211,15 @@
         grid-area: mas;
         text-align: start;
     }
+
+    .series-poster {
+        img {
+            &:hover {
+                z-index: 1;
+                box-shadow: 1px  1px 20px rgb(0, 0, 0);
+            }
+        }
+    }
 }
 
 @media (max-width: 426px) {
