@@ -4,7 +4,7 @@ body {
         padding: 0;
         
         .container-fluid {
-            height: 25vh;
+            height: auto;
             background-color: $background-color;
             @include grid(1, auto, 10px, 10px, center);
             grid-template-rows: repeat(2, auto);
@@ -36,6 +36,7 @@ header .navbar-nav .nav-link.active,
     font-size: 22px;
     padding: 0 10px 10px;
     transition: 0.3s;
+    text-align: center;
 }
 
 a.nav-link.active:hover {
