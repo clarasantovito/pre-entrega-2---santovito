@@ -544,6 +544,7 @@ main .division-container-multiverse {
     font-size: 18px;
   }
   .pages__header-section-article h1 {
+    text-align: center;
     height: 71vh;
     font-size: 80px;
   }
